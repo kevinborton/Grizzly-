@@ -17,7 +17,9 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="logo">
-        <span class="logo-bear">&#x1F43B;</span>
+        <img src="logo.png" alt="Grizzly Services LLC" class="logo-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
+        <span class="logo-bear" style="display:none">&#x1F43B;</span>
         <span class="logo-text">Grizzly<span class="logo-accent">Services</span></span>
       </a>
       <ul class="nav-links" id="nav-links">
@@ -122,36 +124,7 @@
       </div>
       <div class="about-image">
         <div class="bear-emblem">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Grizzly Services bear emblem">
-            <circle cx="100" cy="100" r="95" fill="#1a1a1a" stroke="#c4a35a" stroke-width="3"/>
-            <!-- Bear silhouette -->
-            <ellipse cx="100" cy="115" rx="48" ry="45" fill="#c4a35a"/>
-            <ellipse cx="72" cy="78" rx="18" ry="17" fill="#c4a35a"/>
-            <ellipse cx="128" cy="78" rx="18" ry="17" fill="#c4a35a"/>
-            <ellipse cx="100" cy="95" rx="35" ry="32" fill="#c4a35a"/>
-            <!-- Ears -->
-            <circle cx="64" cy="64" r="10" fill="#c4a35a"/>
-            <circle cx="136" cy="64" r="10" fill="#c4a35a"/>
-            <circle cx="64" cy="64" r="6" fill="#8a6e3a"/>
-            <circle cx="136" cy="64" r="6" fill="#8a6e3a"/>
-            <!-- Face details -->
-            <ellipse cx="100" cy="105" rx="20" ry="14" fill="#8a6e3a"/>
-            <circle cx="88" cy="93" r="5" fill="#1a1a1a"/>
-            <circle cx="112" cy="93" r="5" fill="#1a1a1a"/>
-            <circle cx="89" cy="92" r="2" fill="#fff"/>
-            <circle cx="113" cy="92" r="2" fill="#fff"/>
-            <ellipse cx="100" cy="107" rx="8" ry="5" fill="#5a3a2a"/>
-            <!-- Nose -->
-            <ellipse cx="100" cy="101" rx="6" ry="4" fill="#1a1a1a"/>
-            <!-- Arms -->
-            <ellipse cx="58" cy="138" rx="14" ry="28" fill="#c4a35a" transform="rotate(-15 58 138)"/>
-            <ellipse cx="142" cy="138" rx="14" ry="28" fill="#c4a35a" transform="rotate(15 142 138)"/>
-            <!-- Paws -->
-            <ellipse cx="50" cy="158" rx="12" ry="8" fill="#8a6e3a"/>
-            <ellipse cx="150" cy="158" rx="12" ry="8" fill="#8a6e3a"/>
-            <!-- Stars -->
-            <text x="100" y="185" text-anchor="middle" fill="#c4a35a" font-size="10" font-family="sans-serif" letter-spacing="2">LLC</text>
-          </svg>
+          <img src="logo.png" alt="Grizzly Services LLC bear logo" class="real-logo" />
         </div>
         <div class="about-owner">
           <strong>Kamau Germaine</strong>
@@ -169,40 +142,55 @@
         <p>A look at some of what we've built, fixed, and transformed.</p>
       </div>
 
-      <!--
-        PHOTO INSTRUCTIONS:
-        Replace the placeholder divs below with <img> tags.
-        To use Facebook photos:
-          1. Go to your Facebook page's Photos section
-          2. Right-click each photo → "Save image as" and put them in a /photos/ folder
-          3. Replace each placeholder with: <img src="photos/your-photo.jpg" alt="description" />
-        OR
-          4. Right-click a Facebook photo → "Copy image address" and paste as the src
-      -->
-
       <div class="gallery-grid">
-        <div class="gallery-item placeholder" data-label="Handyman Work">
-          <div class="placeholder-inner"><i class="fas fa-hammer"></i><span>Add Photo</span></div>
+
+        <div class="gallery-item" data-label="Custom Mudroom Build">
+          <img src="photos/mudroom.jpg" alt="Custom mudroom built-in with cubbies, hooks, bench, and shoe storage"
+               onerror="this.style.display='none';this.parentElement.classList.add('placeholder');this.parentElement.querySelector('.placeholder-inner').style.display='flex'" />
+          <div class="placeholder-inner" style="display:none"><i class="fas fa-hammer"></i><span>mudroom.jpg</span></div>
         </div>
-        <div class="gallery-item placeholder" data-label="Landscaping">
-          <div class="placeholder-inner"><i class="fas fa-leaf"></i><span>Add Photo</span></div>
+
+        <div class="gallery-item" data-label="Custom Wood Towel Rack">
+          <img src="photos/wood-shelf.jpg" alt="Custom dark-stained hanging wood shelf and towel rack"
+               onerror="this.style.display='none';this.parentElement.classList.add('placeholder');this.parentElement.querySelector('.placeholder-inner').style.display='flex'" />
+          <div class="placeholder-inner" style="display:none"><i class="fas fa-tree"></i><span>wood-shelf.jpg</span></div>
         </div>
-        <div class="gallery-item placeholder wide" data-label="Custom Woodworking">
-          <div class="placeholder-inner"><i class="fas fa-tree"></i><span>Add Photo</span></div>
+
+        <div class="gallery-item wide" data-label="Pantry Shelf Install — Before &amp; After">
+          <div class="before-after">
+            <div class="ba-side">
+              <span class="ba-tag">Before</span>
+              <img src="photos/pantry-before.jpg" alt="Pantry shelves before — old stained shelves"
+                   onerror="this.style.display='none';this.closest('.ba-side').classList.add('placeholder');this.closest('.ba-side').querySelector('.placeholder-inner').style.display='flex'" />
+              <div class="placeholder-inner" style="display:none"><i class="fas fa-hammer"></i><span>pantry-before.jpg</span></div>
+            </div>
+            <div class="ba-side">
+              <span class="ba-tag after">After</span>
+              <img src="photos/pantry-after.jpg" alt="Pantry shelves after — clean white shelves installed"
+                   onerror="this.style.display='none';this.closest('.ba-side').classList.add('placeholder');this.closest('.ba-side').querySelector('.placeholder-inner').style.display='flex'" />
+              <div class="placeholder-inner" style="display:none"><i class="fas fa-star"></i><span>pantry-after.jpg</span></div>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item placeholder wide" data-label="Completed Project">
-          <div class="placeholder-inner"><i class="fas fa-star"></i><span>Add Photo</span></div>
+
+        <div class="gallery-item" data-label="Upholstered Storage Ottoman">
+          <img src="photos/ottoman.jpg" alt="Custom upholstered storage ottoman bench"
+               onerror="this.style.display='none';this.parentElement.classList.add('placeholder');this.parentElement.querySelector('.placeholder-inner').style.display='flex'" />
+          <div class="placeholder-inner" style="display:none"><i class="fas fa-couch"></i><span>ottoman.jpg</span></div>
         </div>
-        <div class="gallery-item placeholder" data-label="Landscaping">
-          <div class="placeholder-inner"><i class="fas fa-seedling"></i><span>Add Photo</span></div>
+
+        <div class="gallery-item" data-label="Add More Photos">
+          <div class="placeholder-inner" style="display:flex"><i class="fas fa-plus"></i><span>More coming soon</span></div>
         </div>
-        <div class="gallery-item placeholder" data-label="Appliance Install">
-          <div class="placeholder-inner"><i class="fas fa-plug"></i><span>Add Photo</span></div>
-        </div>
+
       </div>
 
       <p class="gallery-note">
         <i class="fas fa-facebook"></i> Follow us on Facebook for more photos of our latest projects.
+      </p>
+      <p class="gallery-instructions">
+        <strong>To add photos:</strong> save images into a <code>photos/</code> folder as:
+        <code>mudroom.jpg</code>, <code>wood-shelf.jpg</code>, <code>pantry-before.jpg</code>, <code>pantry-after.jpg</code>, <code>ottoman.jpg</code>
       </p>
     </div>
   </section>
