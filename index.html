@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grizzly Services LLC | Veteran Owned Handyman, Landscaping & Woodworking</title>
+  <meta name="description" content="Grizzly Services LLC – Veteran owned handyman, landscaping, custom woodworking, rental inspections, and appliance installation in the Lowcountry." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-bear">&#x1F43B;</span>
+        <span class="logo-text">Grizzly<span class="logo-accent">Services</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="tel:8432431096" class="btn btn-gold nav-call">
+            <i class="fas fa-phone"></i> 843-243-1096
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-badge"><i class="fas fa-shield-halved"></i> Veteran Owned &amp; Operated</p>
+      <h1>Grizzly Services LLC</h1>
+      <p class="hero-sub">Handyman &bull; Landscaping &bull; Custom Woodworking</p>
+      <p class="hero-sub2">Built on service. Built to last.</p>
+      <div class="hero-cta">
+        <a href="tel:8432431096" class="btn btn-gold btn-lg">
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+        <a href="#contact" class="btn btn-outline btn-lg">Get a Free Quote</a>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>From small repairs to full landscaping projects — we've got you covered.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-delay="0">
+          <div class="service-icon"><i class="fas fa-hammer"></i></div>
+          <h3>Handyman</h3>
+          <p>No job too small. Repairs, installations, furniture assembly, drywall, and general maintenance handled with care.</p>
+        </div>
+
+        <div class="service-card" data-delay="100">
+          <div class="service-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Landscaping</h3>
+          <p>Lawn care, mulching, edging, cleanup, and full landscape design to keep your property looking sharp year-round.</p>
+        </div>
+
+        <div class="service-card" data-delay="200">
+          <div class="service-icon"><i class="fas fa-tree"></i></div>
+          <h3>Custom Woodworking</h3>
+          <p>Decks, shelving, furniture, and custom builds crafted with precision and built to last a lifetime.</p>
+        </div>
+
+        <div class="service-card" data-delay="300">
+          <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+          <h3>Rental Inspections</h3>
+          <p>Thorough property walkthroughs for landlords and tenants — documenting condition and flagging issues before they become problems.</p>
+        </div>
+
+        <div class="service-card" data-delay="400">
+          <div class="service-icon"><i class="fas fa-plug"></i></div>
+          <h3>Appliance Install</h3>
+          <p>Professional installation of washers, dryers, dishwashers, refrigerators, and more — done right the first time.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <div class="section-header left">
+          <h2>About Grizzly Services</h2>
+        </div>
+        <p class="about-lead">Veteran owned and operated — we bring the discipline, dedication, and attention to detail learned in service to every job we take on.</p>
+        <p>Founded by <strong>Kamau Germaine</strong>, Grizzly Services LLC was built on a simple belief: hard work, honesty, and showing up ready. Whether it's a leaky faucet or a full backyard transformation, we treat every client's home like our own.</p>
+        <div class="about-badges">
+          <div class="badge"><i class="fas fa-shield-halved"></i> Veteran Owned</div>
+          <div class="badge"><i class="fas fa-handshake"></i> Honest Pricing</div>
+          <div class="badge"><i class="fas fa-star"></i> Quality Work</div>
+        </div>
+        <div class="about-contact-strip">
+          <a href="tel:8432431096" class="btn btn-gold">
+            <i class="fas fa-phone"></i> Call Now — 843-243-1096
+          </a>
+        </div>
+      </div>
+      <div class="about-image">
+        <div class="bear-emblem">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Grizzly Services bear emblem">
+            <circle cx="100" cy="100" r="95" fill="#1a1a1a" stroke="#c4a35a" stroke-width="3"/>
+            <!-- Bear silhouette -->
+            <ellipse cx="100" cy="115" rx="48" ry="45" fill="#c4a35a"/>
+            <ellipse cx="72" cy="78" rx="18" ry="17" fill="#c4a35a"/>
+            <ellipse cx="128" cy="78" rx="18" ry="17" fill="#c4a35a"/>
+            <ellipse cx="100" cy="95" rx="35" ry="32" fill="#c4a35a"/>
+            <!-- Ears -->
+            <circle cx="64" cy="64" r="10" fill="#c4a35a"/>
+            <circle cx="136" cy="64" r="10" fill="#c4a35a"/>
+            <circle cx="64" cy="64" r="6" fill="#8a6e3a"/>
+            <circle cx="136" cy="64" r="6" fill="#8a6e3a"/>
+            <!-- Face details -->
+            <ellipse cx="100" cy="105" rx="20" ry="14" fill="#8a6e3a"/>
+            <circle cx="88" cy="93" r="5" fill="#1a1a1a"/>
+            <circle cx="112" cy="93" r="5" fill="#1a1a1a"/>
+            <circle cx="89" cy="92" r="2" fill="#fff"/>
+            <circle cx="113" cy="92" r="2" fill="#fff"/>
+            <ellipse cx="100" cy="107" rx="8" ry="5" fill="#5a3a2a"/>
+            <!-- Nose -->
+            <ellipse cx="100" cy="101" rx="6" ry="4" fill="#1a1a1a"/>
+            <!-- Arms -->
+            <ellipse cx="58" cy="138" rx="14" ry="28" fill="#c4a35a" transform="rotate(-15 58 138)"/>
+            <ellipse cx="142" cy="138" rx="14" ry="28" fill="#c4a35a" transform="rotate(15 142 138)"/>
+            <!-- Paws -->
+            <ellipse cx="50" cy="158" rx="12" ry="8" fill="#8a6e3a"/>
+            <ellipse cx="150" cy="158" rx="12" ry="8" fill="#8a6e3a"/>
+            <!-- Stars -->
+            <text x="100" y="185" text-anchor="middle" fill="#c4a35a" font-size="10" font-family="sans-serif" letter-spacing="2">LLC</text>
+          </svg>
+        </div>
+        <div class="about-owner">
+          <strong>Kamau Germaine</strong>
+          <span>Founder &amp; CEO</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Work</h2>
+        <p>A look at some of what we've built, fixed, and transformed.</p>
+      </div>
+
+      <!--
+        PHOTO INSTRUCTIONS:
+        Replace the placeholder divs below with <img> tags.
+        To use Facebook photos:
+          1. Go to your Facebook page's Photos section
+          2. Right-click each photo → "Save image as" and put them in a /photos/ folder
+          3. Replace each placeholder with: <img src="photos/your-photo.jpg" alt="description" />
+        OR
+          4. Right-click a Facebook photo → "Copy image address" and paste as the src
+      -->
+
+      <div class="gallery-grid">
+        <div class="gallery-item placeholder" data-label="Handyman Work">
+          <div class="placeholder-inner"><i class="fas fa-hammer"></i><span>Add Photo</span></div>
+        </div>
+        <div class="gallery-item placeholder" data-label="Landscaping">
+          <div class="placeholder-inner"><i class="fas fa-leaf"></i><span>Add Photo</span></div>
+        </div>
+        <div class="gallery-item placeholder wide" data-label="Custom Woodworking">
+          <div class="placeholder-inner"><i class="fas fa-tree"></i><span>Add Photo</span></div>
+        </div>
+        <div class="gallery-item placeholder wide" data-label="Completed Project">
+          <div class="placeholder-inner"><i class="fas fa-star"></i><span>Add Photo</span></div>
+        </div>
+        <div class="gallery-item placeholder" data-label="Landscaping">
+          <div class="placeholder-inner"><i class="fas fa-seedling"></i><span>Add Photo</span></div>
+        </div>
+        <div class="gallery-item placeholder" data-label="Appliance Install">
+          <div class="placeholder-inner"><i class="fas fa-plug"></i><span>Add Photo</span></div>
+        </div>
+      </div>
+
+      <p class="gallery-note">
+        <i class="fas fa-facebook"></i> Follow us on Facebook for more photos of our latest projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container contact-inner">
+
+      <div class="contact-info">
+        <div class="section-header left">
+          <h2>Get in Touch</h2>
+          <p>Ready to get started? Give us a call or send a message and we'll get back to you quickly.</p>
+        </div>
+
+        <div class="contact-items">
+          <a href="tel:8432431096" class="contact-item call-btn">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Call Now</strong>
+              <span>843-243-1096</span>
+            </div>
+          </a>
+          <a href="mailto:Grizzlyservices94@gmail.com" class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email Us</strong>
+              <span>Grizzlyservices94@gmail.com</span>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <strong>Service Area</strong>
+              <span>Lowcountry, South Carolina</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Hours</strong>
+              <span>Mon–Sat: 7am – 6pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form
+          action="https://formsubmit.co/Grizzlyservices94@gmail.com"
+          method="POST"
+          id="contact-form"
+        >
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New Quote Request – Grizzly Services LLC" />
+          <input type="hidden" name="_next" value="https://grizzlyservicesllc.com/thanks.html" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display:none" />
+
+          <h3>Request a Free Quote</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="843-000-0000" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Needed *</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option value="Handyman">Handyman</option>
+              <option value="Landscaping">Landscaping</option>
+              <option value="Custom Woodworking">Custom Woodworking</option>
+              <option value="Rental Inspection">Rental Inspection</option>
+              <option value="Appliance Install">Appliance Install</option>
+              <option value="Other">Other / Not Sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About Your Project *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe what you need done, location, and any other details..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-lg btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">Grizzly<span class="logo-accent">Services</span> LLC</span>
+        <p>Veteran Owned | Handyman | Landscaping | Custom Woodworking</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:8432431096"><i class="fas fa-phone"></i> 843-243-1096</a>
+        <a href="mailto:Grizzlyservices94@gmail.com"><i class="fas fa-envelope"></i> Grizzlyservices94@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Grizzly Services LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky Call Button (mobile) -->
+  <a href="tel:8432431096" class="sticky-call" aria-label="Call Grizzly Services">
+    <i class="fas fa-phone"></i>
+    <span>Call Now</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
