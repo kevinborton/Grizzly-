@@ -719,6 +719,12 @@ a.contact-item:hover {
   color: rgba(255,255,255,0.2);
   font-size: 0.8rem;
 }
+.footer-bottom a {
+  color: rgba(255,255,255,0.35);
+  transition: color var(--transition);
+}
+.footer-bottom a:hover { color: var(--gold); }
+}
 
 /* ===== STICKY CALL BUTTON (mobile) ===== */
 .sticky-call {
